@@ -10,14 +10,6 @@ chai.use(require('chai-fs'))
 
 const lib = require('../lib')
 
-function doGetPromise (url) {
-  const promise = {}
-  setTimeout(() => {
-    promise.then(`<div>${url}</div>`)
-  }, 100)
-  return promise
-}
-
 describe('tests', () => {
   it('gets test', (done) => {
     let callCount = 0
@@ -30,10 +22,9 @@ describe('tests', () => {
       }, 1)
     }
 
-    function * example(await) {
+    function * example (await) {
       for (let i = 0; i < 5; i++) {
         const res = yield await(doGet, [`http://url.com/${i}`]);
-        console.info('res', res);
         expect(res).to.equal(`<div>http://url.com/${i}</div>`)
       }
     }
