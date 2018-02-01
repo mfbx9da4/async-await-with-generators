@@ -1,4 +1,8 @@
 const lib = {
+  /**
+   * Prepare a function which will use `yield await`.
+   * The `await` function will be injected into the function.
+   */
   async: function async (asyncGeneratorFunc) {
     const instance = {}
     // bind the instance so we resolve to the correct instance

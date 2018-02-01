@@ -1,7 +1,7 @@
-Async await as implemented by generators thanks to Eli
+Async await implemented with generators. This code is an experiment for showing how async await could be implemented.
 
+Thanks to Eli who originally had the idea for async await before promises were a thing.
 
-##Test
+##Test 
 
-
-    run _mocha
+    npm test
