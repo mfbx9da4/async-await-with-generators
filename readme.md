@@ -1,6 +1,6 @@
 Async await implemented with generators. This code is an experiment for showing how async await could be implemented.
 
-Thanks to Eli who originally had the idea for async await before promises were a thing.
+Thanks to [Eli who originally](https://github.com/eligrey/async.js) had the idea for async await with generators before promises were a thing.
 
 ## Usage
 
