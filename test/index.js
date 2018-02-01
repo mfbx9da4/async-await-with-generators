@@ -44,7 +44,7 @@ describe('tests', () => {
     setTimeout(() => {
       expect(callCount).to.equal(5*3)
       done()
-    }, 10)
+    }, 20)
   })
 
   it('should get promises')
