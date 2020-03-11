@@ -5,6 +5,7 @@ Thanks to [Eli who originally](https://github.com/eligrey/async.js) had the idea
 ## Usage
 
 ```js
+const lib = require('./lib')
 // Some example asynchronous function
 // The library assumes that all async funcs must have a callback as the last arg
 function doGet (url, callback) {
